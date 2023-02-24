@@ -111,29 +111,21 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTION
 
 4. **Provide/Type** an environment code which is unique to your environment. This code is a suffix to your environment and should not have any special characters or uppercase letters and should not be more than 6 characters. 
 
-5. **Provide** a strong SQL Administrator login password and set this aside for later use.
-
-6. **Enter** the Power BI workspace ID copied in step 6 of [Task 2](#task-2-power-bi-workspace-creation).
-
-7. **Enter** the power BI streaming dataset url for **CCO Realtime** you copied in step 13 of [Task 2](#task-2-power-bi-workspace-creation).
-
-8. **Enter** the power BI streaming dataset url for **Store Telemetry Realtime** you copied in step 12 of [Task 2](#task-2-power-bi-workspace-creation).
-
-9. **Click** ‘Review + Create’ button.
+5. **Click** ‘Review + Create’ button.
 
 	![The Custom deployment form is displayed with example data populated.](media/powerbi-deployment-1.png)
 
-10. **Click** the **Create** button once the template has been validated.
+6. **Click** the **Create** button once the template has been validated.
 
 	![Creating the template after validation.](media/powerbi-deployment-3.png)
 	
 	> **NOTE:** The provisioning of your deployment resources will take approximately 10 minutes.
 	
-11. **Stay** on the same page and wait for the deployment to complete.
+7. **Stay** on the same page and wait for the deployment to complete.
     
 	![A portion of the Azure Portal to confirm that the deployment is in progress.](media/microsoft-template.png)
     
-12. **Select** the **Go to resource group** button once your deployment is complete.
+8. **Select** the **Go to resource group** button once your deployment is complete.
 
 	![A portion of the Azure Portal to confirm that the deployment is in progress.](media/microsoft-template-2.png)
 
@@ -158,7 +150,7 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTION
 4. In the Azure Cloud Shell window, ensure the PowerShell environment is selected and **enter** the following command to clone the repository files.
 
 ```
-git clone -b midp-with-cosmos --depth 1 --single-branch https://github.com/microsoft/Azure-Analytics-and-AI-Engagement.git midpCosmos
+git clone -b midp-act2-3 --depth 1 --single-branch https://github.com/microsoft/Azure-Analytics-and-AI-Engagement.git midp
 ```
 
 ![Git Clone Command to Pull Down the demo Repository.](media/cloud-shell-4.png)
@@ -170,12 +162,12 @@ git clone -b midp-with-cosmos --depth 1 --single-branch https://github.com/micro
 5. **Execute** the midpComosSetup.ps1 script by executing the following command:
 
 ```
-cd ./midpCosmos/midpCosmos
+cd ./midp/act-3/
 ```
 
 6. Then **run** the PowerShell: 
 ```
-./midpComosSetup.ps1
+./midpSetup.ps1
 ```
     
 ![Commands to run the PowerShell Script.](media/cloud-shell-5.png)
